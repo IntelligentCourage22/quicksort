@@ -3,18 +3,13 @@ def partition(arr, low, high):
 	pivot = arr[high]	 # pivot 
 
 	for j in range(low, high): 
-
-		
 		if arr[j] <= pivot: 
-
 			# increment index of smaller element 
 			i = i+1
 			arr[i], arr[j] = arr[j], arr[i] 
 
 	arr[i+1], arr[high] = arr[high], arr[i+1] 
 	return (i+1) 
-
-
 
 def quickSort(arr, low, high): 
 	if len(arr) == 1: 
@@ -28,12 +23,11 @@ def quickSort(arr, low, high):
 		quickSort(arr, low, pi-1) 
 		quickSort(arr, pi+1, high) 
 
-
+#taking user input for sorting
 arr = [] 
 n = int(input("Enter the number of elements to be sorted : "))
 for i in range(0,n):
     element = int(input())
-
     arr.append(element) 
 n = len(arr) 
 quickSort(arr, 0, n-1) 
