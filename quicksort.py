@@ -29,8 +29,13 @@ def quickSort(arr, low, high):
 arr = [] 
 n = int(input("Enter the number of elements to be sorted : "))
 for i in range(0,n):
-    element = int(input())
-    arr.append(element) 
+	i+=1
+	try:
+		element = int(input(f"Enter element {i}: "))
+		arr.append(element) 
+	except ValueError:
+		print("please enter integers only")
+		continue
 n = len(arr) 
 quickSort(arr, 0, n-1) 
 print("Sorted array is:") 
