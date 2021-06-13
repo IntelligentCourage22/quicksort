@@ -1,5 +1,5 @@
 #Time complexity:
-#Worst-case performance - O(n2)
+#Worst-case performance - O(n^2)
 #best-case performance - O(n log n) (simple partition) or O(n) (three-way partition and equal keys)
 #Average performance - O(n log n)
 #Worst-case space complexity -	O(n) auxiliary (naive) and O(log n) auxiliary
