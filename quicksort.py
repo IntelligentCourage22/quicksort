@@ -1,8 +1,8 @@
-#Time complexity:
-#Worst-case performance - O(n^2)
-#best-case performance - O(n log n) (simple partition) or O(n) (three-way partition and equal keys)
-#Average performance - O(n log n)
-#Worst-case space complexity -	O(n) auxiliary (naive) and O(log n) auxiliary
+'''Time complexity:
+Worst-case performance - O(n^2)
+best-case performance - O(n log n) (simple partition) or O(n) (three-way partition and equal keys)
+Average performance - O(n log n)
+Worst-case space complexity -	O(n) auxiliary (naive) and O(log n) auxiliary'''
 
 def partition(arr, low, high): 
 	i = (low-1)		 # index of smaller element 
